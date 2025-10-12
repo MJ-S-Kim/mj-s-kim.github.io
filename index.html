@@ -1,141 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/images/favicon.ico">
+        <meta property="og:title" content="Minjeong Kim">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://mjkim.github.io">
+        <meta property="og:description" content="Minjeong Kim">
+        <meta itemprop="name" content="Minjeong Kim">
+        <meta itemprop="description" content="Minjeong Kim">
+        <meta itemprop="url" content="https://mjkim.github.io/">
+        <meta itemprop="thumbnailUrl" content="https://mjkim.github.io/">
+        <meta
+            itemprop="image"
+            content="https://mjkim.github.io/assets/images/photo_1.jpg">
+        <meta
+            itemprop="imageUrl"
+            content="https://mjkim.github.io/assets/images/photo_1.jpg">
+        <meta
+            property="og:image"
+            content="https://mjkim.github.io/assets/images/photo_1.jpg">
+            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Minjeong Kim</title>
+    </head>
 
-    <title>Minjeong Kim</title>
-    <meta name="description" content="Minjeong Kim — Data Scientist in Medical AI & Statistics" />
-    <meta property="og:title" content="Minjeong Kim" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mj-s-kim.github.io/" />
-    <meta property="og:description" content="Data Scientist focused on medical imaging AI evaluation, calibration, and statistical methodology." />
-    <meta property="og:image" content="https://mj-s-kim.github.io/assets/images/og-card.png" />
+    <body>
+        <div id="wrap">
+            <nav class="menu__mo">
+                <input type="checkbox" id="menu__hamburger">
+                <label class="menu__action" for="menu__hamburger">
+                    <div class="hamburger"></div>
+                </label>
+                <ul>
+                    <li class="on"><a href="./index.html">About Me</a></li>
+                    <li><a href="./Research.html">Research</a></li>
+                    <li><a href="./Publications.html">Publications</a></li>
+                    <!-- CV 링크 파일명만 교체 -->
+                    <li><a href="./CV_MinjeongKim.pdf" target="_blank">CV</a></li>
+                    <li><a href="./Photo.html">Photo</a></li>
+                </ul>
+            </nav>
+            <nav class="menu__pc">
+                <ul>
+                    <li class="on"><a href="./index.html">About Me</a></li>
+                    <li><a href="./Research.html">Research</a></li>
+                    <li><a href="./Publications.html">Publications</a></li>
+                    <!-- CV 링크 파일명만 교체 -->
+                    <li><a href="./CV_MinjeongKim.pdf" target="_blank">CV</a></li>
+                    <li><a href="./Photo.html">Photo</a></li>
+                </ul>
+            </nav>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+            <main>
+                <section class="container">
+                    <div class="about">
+                        <h2><span>About Me</span></h2>
+                        <div class="profile">
+                            <!-- 친구 사진 노출 방지: 이미지 주석 처리 -->
+                            <!-- <img src="./assets/images/sj_1.jpeg" alt="(hidden)" width="280"> -->
+                            <p style="font-size:2em">
+                                <strong>Minjeong</strong> Kim <br />
+                            </p>  
+                            <p>
+                                I am a Data Scientist in Medical AI (Lunit Inc.) with a Ph.D. in Statistics (Ewha Womans University, 2025).
+                                I specialize in evaluation and calibration for medical imaging AI, including threshold shifting (multi-anchor),
+                                distributional comparison (JSD/KS), and practical metrics (FROC/ROC, bootstrap CIs, DeLong tests).
+                                I also study biomarker-based risk (e.g., ferritin and metabolic health) and the impact of data pseudonymization on analytic quality.
+                            </p>
+                        </div>
+                        
+                        <!-- Work Experience: 형식 유지, 내용만 CV 기준으로 교체 -->
+                        <h3><span>Work Experience</span></h3>
+                        <dl class="list__year">
+                            <dt>
+                                <span>Mar 2021 – Present</span> 
+                                <em>Data Scientist, Cancer Screening AI Research Dept.</em>
+                            </dt>
+                            <dd>Lunit Inc., Seoul, South Korea</dd>
 
-  <body>
-    <div id="wrap">
-      <!-- Navigation (Mobile) -->
-      <nav class="menu__mo">
-        <input type="checkbox" id="menu__hamburger" />
-        <label class="menu__action" for="menu__hamburger">
-          <div class="hamburger"></div>
-        </label>
-        <ul>
-          <li class="on"><a href="./index.html">About Me</a></li>
-          <li><a href="./Project.html">Research</a></li>
-          <li><a href="./Publications.html">Publications</a></li>
-          <li><a href="./CV_MinjeongKim.pdf" target="_blank">CV</a></li>
-          <li><a href="./Photo.html">Photo</a></li>
-        </ul>
-      </nav>
+                            <dt>
+                                <span>May 2017 – Feb 2021</span> 
+                                <em>Biostatistician / Data Manager</em>
+                            </dt>
+                            <dd>Medytox Inc., South Korea</dd>
 
-      <!-- Navigation (Desktop) -->
-      <nav class="menu__pc">
-        <ul>
-          <li class="on"><a href="./index.html">About Me</a></li>
-          <li><a href="./Project.html">Research</a></li>
-          <li><a href="./Publications.html">Publications</a></li>
-          <li><a href="./CV_MinjeongKim.pdf" target="_blank">CV</a></li>
-          <li><a href="./Photo.html">Photo</a></li>
-        </ul>
-      </nav>
-    <main>
-      <section class="container">
-        <!-- ===== Hero / Intro (텍스트만 교체, 스타일/메뉴는 유지) ===== -->
-        <header>
-          <h1>Minjeong Kim</h1>
-          <p>Data Scientist (Medical AI &amp; Statistics)</p>
-          <p>
-            <a href="mailto:violet00918@gmail.com">Email</a> ·
-            <a href="https://github.com/MJ-S-Kim" target="_blank">GitHub</a> ·
-            <a href="https://www.linkedin.com/in/minjeong-kim-stat/" target="_blank">LinkedIn</a> ·
-            <a href="./CV_MinjeongKim.pdf" target="_blank">CV</a>
-          </p>
-        </header>
-    
-        <!-- ===== Education (from CV) ===== -->
-        <div class="education">
-          <h2><span>Education</span></h2>
-          <dl class="list__year">
-            <dt>
-              <em>Ph.D. in Statistics</em>
-              <span>Sep 2022 – Aug 2025</span>
-            </dt>
-            <dd>Ewha Womans University, Seoul, South Korea</dd>
-    
-            <dt>
-              <em>MBA in AI Big Data</em>
-              <span>Mar 2020 – Feb 2022</span>
-            </dt>
-            <dd>aSSIST (Seoul Business School), Seoul, South Korea</dd>
-    
-            <dt>
-              <em>M.S. in Statistics</em>
-              <span>Sep 2013 – Aug 2015</span>
-            </dt>
-            <dd>Ewha Womans University, Seoul, South Korea</dd>
-    
-            <dt>
-              <em>B.S. in Statistics (Minor in Law)</em>
-              <span>Mar 2008 – Aug 2013</span>
-            </dt>
-            <dd>Ewha Womans University, Seoul, South Korea</dd>
-          </dl>
+                            <dt>
+                                <span>Aug 2016 – May 2017</span> 
+                                <em>Biostatistician</em>
+                            </dt>
+                            <dd>Catholic Medical Center, South Korea</dd>
+                        </dl>
+
+                        <!-- Education: 형식 유지, 내용만 CV 기준으로 교체 -->
+                        <h3><span>Education</span></h3>
+                        <ul class="list__bar">
+                            <li>Ph.D. in Statistics, <a href="https://ewha.ac.kr" target="_blank" style="color: orange">Ewha Womans University</a>, Seoul, South Korea, Sep 2022 – Aug 2025</li>
+                            <li>MBA in AI Big Data, aSSIST (Seoul Business School), Seoul, South Korea, Mar 2020 – Feb 2022</li>
+                            <li>M.S. in Statistics, <a href="https://ewha.ac.kr" target="_blank" style="color: orange">Ewha Womans University</a>, Seoul, South Korea, Sep 2013 – Aug 2015</li>
+                            <li>B.S. in Statistics (Minor in Law), <a href="https://ewha.ac.kr" target="_blank" style="color: orange">Ewha Womans University</a>, Seoul, South Korea, Mar 2008 – Aug 2013</li>           
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="link__item">
+                    <!-- 사용자 링크만 교체, 아이콘/형식 유지 -->
+                    <a href="https://github.com/MJ-S-Kim" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/minjeong-kim-stat/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:violet00918@gmail.com"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+                </div>
+            </footer>
         </div>
-    
-        <!-- ===== Experience (from CV) ===== -->
-        <div class="experience">
-          <h2><span>Professional Experience</span></h2>
-          <dl class="list__year">
-            <dt>
-              <em>Data Scientist, Cancer Screening AI Research Dept.</em>
-              <span>Mar 2021 – Present</span>
-            </dt>
-            <dd>Lunit Inc., Seoul, South Korea</dd>
-    
-            <dt>
-              <em>Biostatistician / Data Manager</em>
-              <span>May 2017 – Feb 2021</span>
-            </dt>
-            <dd>Medytox Inc., South Korea</dd>
-    
-            <dt>
-              <em>Biostatistician</em>
-              <span>Aug 2016 – May 2017</span>
-            </dt>
-            <dd>Catholic Medical Center, South Korea</dd>
-          </dl>
-          <p style="margin-top:0.6rem;">
-            * Full details (projects, publications, services) in my
-            <a href="./CV_MinjeongKim.pdf" target="_blank">CV</a>.
-          </p>
-        </div>
-      </section>
-    </main>
-
-
-      <footer>
-        <div class="link__item">
-          <a href="https://github.com/MJ-S-Kim" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/minjeong-kim-stat/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="mailto:violet00918@gmail.com" aria-label="Email">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-        </div>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>
-
